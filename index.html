@@ -66,11 +66,21 @@
             <li><a>Contact Us</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
+        <div class="navbar-end hidden md:flex lg:flex">
           <i class="fa-solid fa-magnifying-glass mr-6 bg-slate-100 rounded-full p-2"></i>
           <i class="fa-solid fa-cart-shopping mr-6 bg-slate-100 rounded-full p-2"></i>
-          <a class="btn rounded-full bg-[#ABEF5F]">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-1 text-white"></i></a>
+          <a class="btn rounded-full bg-[#ABEF5F] font-extrabold">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-1 text-white"></i></a>
         </div>
+          <div class="navbar-end lg:hidden dropdown dropdown-hover flex justify-end">
+            <div tabindex="0" role="button" class="btn"><i class="fa-solid fa-bars"></i></div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-auto p-1 shadow mt-16">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+            </ul>
+          </div>
       </div>
      </nav>
      <!-- End nav section -->
@@ -99,7 +109,7 @@
     <section class="pt-16 pb-12 mt-4 mb-4">
       <div class="container mx-auto p-3 md:p-6 lg:p-8 relative">
         <div class="absolute lg:-top-4 lg:-left-10 ">
-          <img src="./assets/Vector.png" alt="">
+          <img class="hidden md:flex lg:flex" src="./assets/Vector.png" alt="">
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 flex-1">
           <!-- Left Part -->
@@ -186,28 +196,28 @@
           <h3 class="text-2xl lg:text-4xl font-extrabold">Our Latest Portfolio</h3>
           <p class="w-3/5 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-4 grid-rows-2 gap-4 lg:gap-8 ">
+        <div class="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-4 lg:gap-8">
           <!-- Card 1 -->
-          <div class="grid grid-cols-1 lg:grid-cols-3 col-span-3 bg-[#FFFFFF] border border-[#E9E9E9] rounded-lg p-4 lg:p-8" >
-            <img class="my-auto" src="./assets/img1.png" alt="">
-            <div class="space-y-4 lg:space-y-8">
+          <div class="grid grid-cols-1 lg:grid-cols-3 lg:col-span-3 bg-[#FFFFFF] border border-[#E9E9E9] rounded-lg p-4 lg:p-8" >
+            <img class="my-auto w-full" src="./assets/img1.png" alt="">
+            <div class="space-y-4 lg:space-y-8 ml-4">
               <h3 class="text-lg lg:text-2xl font-bold">Commercial</h3>
               <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
               <p>View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"></i></p>
             </div>
           </div>
           <!-- Card 2 -->
-           <div class="grid bg-[#FFFFFF] border border-[#E9E9E9] rounded-lg p-4 lg:p-8 flex justify-center items-center">
-            <img class="justify-center items-center" src="./assets/img2.png" alt="">
+           <div class=" bg-[#FFFFFF] border border-[#E9E9E9] rounded-lg p-4 lg:p-8 flex justify-center items-center w-full">
+            <img class="justify-center items-center w-full" src="./assets/img2.png" alt="">
            </div>
            <!-- Card 3 -->
            <div class="bg-[#FFFFFF] border border-[#E9E9E9] rounded-lg p-4 lg:p-8 flex">
-            <img class="justify-center items-center" src="./assets/img3.png" alt="">
+            <img class="justify-center items-center w-full" src="./assets/img3.png" alt="">
            </div>
            <!-- Card 4 -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 col-span-2 bg-[#FFFFFF] border border-[#E9E9E9] rounded-lg p-4 lg:p-8 flex">
-            <img class="my-auto" src="./assets/img4.png" alt="">
-            <div class="space-y-4 lg:space-y-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 lg:col-span-2 bg-[#FFFFFF] border border-[#E9E9E9] rounded-lg p-4 lg:p-8 flex">
+            <img class="my-auto w-full" src="./assets/img4.png" alt="">
+            <div class="space-y-4 lg:space-y-8 ml-4">
               <h3 class="text-lg lg:text-2xl font-bold">Commercial</h3>
               <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
               <p>View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"></i></p>
@@ -215,7 +225,7 @@
           </div>
           <!-- Card 5-->
           <div class="bg-[#FFFFFF] border border-[#E9E9E9] rounded-lg p-4 lg:p-8 flex ">
-            <img  src="./assets/img5.png" alt="">
+            <img class="w-full" src="./assets/img5.png" alt="">
            </div>
         </div>
       </section>
@@ -231,21 +241,21 @@
         <p class="w-11/12 lg:w-3/5 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
       <!-- Grid Section -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 gap-x-4 space-y-2 ">
+      <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 gap-x-4 space-y-2 items-center">
         <div>
-            <input type="text" placeholder="First Name*" class="input input-bordered input-xs w-full py-6"/>
+          <input type="text" placeholder="First Name*" class="rounded-3xl input input-bordered input-xs w-full py-6"/>
+      </div>
+        <div>
+            <input type="text " placeholder="Last Name*" class="rounded-3xl input input-bordered input-xs w-full py-6"/>
         </div>
         <div>
-            <input type="text" placeholder="Last Name*" class="input input-bordered input-xs w-full py-6"/>
+            <input type="text" placeholder="Email*" class="rounded-3xl input input-bordered input-xs w-full py-6"/>
         </div>
         <div>
-            <input type="text" placeholder="Email*" class="input input-bordered input-xs w-full py-6"/>
-        </div>
-        <div>
-            <input type="text" placeholder="Phone Number*" class="input input-bordered input-xs w-full py-6"/>
+            <input type="text" placeholder="Phone Number*" class="rounded-3xl input input-bordered input-xs w-full py-6"/>
         </div>
         <div class="col-span-1 lg:col-span-2">
-            <input type="text" placeholder="Address*" class="input input-bordered w-full py-16"/>
+            <input type="text" placeholder="Address*" class="input rounded-3xl input-bordered w-full py-16"/>
         </div>
     </div>
     <button class="btn rounded-full bg-[#ABEF5F] w-full mt-2 lg:mt-4">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-1 text-white"></i></button>
@@ -263,11 +273,12 @@
           <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"></i><span class="text-xl lg:text-3xl text-white font-bold">Rinterio</span></a>
         </div>
         <p class=" text-gray-300">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
-        <nav class="grid grid-flow-col gap-4">
-          <a class="link link-hover text-white">About us</a>
-          <a class="link link-hover text-white">Contact</a>
-          <a class="link link-hover text-white">Jobs</a>
-          <a class="link link-hover text-white">Press kit</a>
+        <nav class="grid grid-cols-1 lg:grid-flow-col gap-4">
+          <a class="link link-hover text-[#E9E9E9]">Home</a>
+          <a class="link link-hover text-[#E9E9E9]">Services</a>
+          <a class="link link-hover text-[#E9E9E9]">Portfolio</a>
+          <a class="link link-hover text-[#E9E9E9]">Blogs</a>
+          <a class="link link-hover text-[#E9E9E9]">Contact Us</a>
         </nav>
         <div>
           <button class="btn rounded-full bg-[#ABEF5F] font-extrabold  mt-2 lg:mt-4">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-1 text-white"></i></button>
